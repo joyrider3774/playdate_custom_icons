@@ -84,11 +84,7 @@ main {
 		flex: 0 0 75px;
 	}
 }
-@media (max-width: 40em) {
-	.grid{
-	  flex-direction: column !important;
-	}
-  }
+
 
 /* ---------- H2 for Banner category ---------- */
 
