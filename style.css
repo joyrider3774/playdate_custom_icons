@@ -1,0 +1,149 @@
+/* ----------- General improvements ----------- */
+* {
+	box-sizing: border-box;
+	border-spacing: 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body{
+	--se: flex;/* Used to hide/show category */
+}
+
+html {
+	font: 13pt sans-serif;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	color: #ffc900;
+	background: #7700ff;  /* fallback for old browsers */
+
+}
+
+/* ------------------ Links ------------------ */
+a:link {
+  color: #ffc900;
+}
+
+a:visited {
+  color: #ffc900;
+}
+
+a:hover {
+  color: #00c900;
+}
+
+a:active {
+  color: #ffc900;
+}
+
+
+/* ------------------ Header ------------------ */
+header {
+
+	display: block;
+	margin: 0;
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	text-align: center;
+	padding: 2rem 1rem;
+	background: #000000c4;
+	color: #ffc900;
+}
+
+/* -------------- Main container -------------- */
+main {
+	margin: auto;
+	width: 100%;
+	max-width: 60rem;
+	padding: 4rem 0.5rem 0rem;
+	overflow-x: hidden;
+}
+
+/* --------------- Grid columns --------------- */
+.grid {
+	flex-wrap: wrap;
+	display: flex;
+	margin: 0 -0.5rem;
+	align-items: stretch;
+}
+
+.grid>div {
+	padding: .3rem;
+	flex: 0 0 52px;
+}
+
+.grid>div>* {
+	margin-top: 0;
+}
+@media (max-width:60em){
+	.grid>div {
+		flex: 0 0 75px;
+	}
+}
+@media (max-width: 40em) {
+	.grid{
+	  flex-direction: column !important;
+	}
+  }
+
+/* ---------- H2 for Banner category ---------- */
+
+h2 {
+	display: var(--se);
+	align-items: center;
+	margin: 1em -1em;
+  }
+ h2:before, h2:after {
+	content: "";
+	flex: 1;
+	height: 1px;
+	margin: 0 1em;
+	background: #fff;
+  }
+  
+  
+/* ------------------- Input ------------------ */
+
+input{
+	display: block;
+  background: #fff;
+  padding: .6rem;
+  border-radius: 0.3rem;
+  width: 100%;
+  border: 0.1rem solid #BDBDBD;
+  outline: none;
+  height: 2.5rem;
+}
+input:hover{
+	border: 0.1rem solid #0F52BA !important;
+}
+
+/* ---------------- Search Bar ---------------- */
+#sb{
+	max-width: 300px;
+	margin:auto;
+}
+/* ------------------ Footer ------------------ */
+
+footer {
+	padding: 1rem 0;
+}
+
+/* --------------- Icon image -------------- */
+
+img {
+	width: 32px;
+	max-height: 32px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	border-radius: 3px;
+	transform: scale(.9);
+	transition: transform 250ms ease-in-out;
+}
+
+img:hover {
+	transform: scale(1);
+}
