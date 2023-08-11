@@ -1,4 +1,4 @@
-# [playdate_custom_icons.github.io](https://playdate_custom_icons.github.io/)
+# https://joyrider3774.github.io/playdate_custom_icons/
 icons for playdate games not having one
 
 ## Credits 
