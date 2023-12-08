@@ -7,4 +7,5 @@ it will verify if you got any games listed in this repo and add the icons automa
 
 ## Credits 
 site is a modified version of https://famicomrade.github.io/
+
 installer.ps1 install script made by grntrenchman
